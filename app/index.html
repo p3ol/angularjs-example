@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="poool-example">
+    <head>
+        <meta charset="utf-8">
+        <base href="/" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Poool SDK Angular 1 Example</title>
+
+        <script>
+            !function(w,d,s,u,p,t,o){
+                w[p]=w[p]||function(){(w[p]._q=w[p]._q||[]).push(arguments)},
+                t=d.createElement(s),o=d.getElementsByTagName(s)[0],
+                t.async=1,t.src=u,o.parentNode.insertBefore(t,o)
+            }(window, document, "script", "https://assets.poool.fr/poool.min.js", "poool");
+
+            poool("init", "155PF-L7Q6Q-EB2GG-04TF8");
+            poool("config", {
+                debug: true,
+                custom_segment: "angular-1",
+                cookies_enabled: true,
+                mode: "hide",
+                post_container: ".articleBody"
+            });
+        </script>
+    </head>
+    <body>
+        <div ng-view autoscroll="true"></div>
+    </body>
+</html>
