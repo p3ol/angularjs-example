@@ -2,16 +2,16 @@ angular
     .module "poool-example"
     .component "subscription",
         template: """
-            <div class="page home">
+            <div class="page subscribe">
                 <div class="container">
                     <header on-login="$ctrl.onLogin()"></header>
 
                     <h1>Our offers</h1>
                     <p>This is a subscription page, without any paywall, where you list all your subscription offers.</p>
                     <ul>
-                        <li><a ng-href="/">Home</Link></li>
-                        <li><a ng-href="/premium">Premium post</Link></li>
-                        <li><a ng-href="/free">Free post</Link></li>
+                        <li><a ng-href="/">Home</a></li>
+                        <li><a ng-href="/premium">Premium post</a></li>
+                        <li><a ng-href="/free">Free post</a></li>
                     </ul>
                 </div>
             </div>
