@@ -47,8 +47,15 @@ angular
         """
         controller: class PremiumCtrl
 
+            constructor: (@$location, @$timeout) ->
+                "ngInject"
+
             $onInit: ->
+                poool "event", "onSubscribeClick", @onSubscribeClick
                 @sendHit()
+
+            onSubscribeClick: =>
+                @$timeout => @$location.path "/subscribe"
 
             onLogin: ->
                 @sendHit()
@@ -64,3 +71,6 @@ angular
 
             isUserPremium: ->
                 window.test_user?.premium
+
+            $onDestroy: ->
+                poool "unevent", "onSubscribeClick", @onSubscribeClick

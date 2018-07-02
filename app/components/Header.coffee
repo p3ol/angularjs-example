@@ -28,8 +28,15 @@ angular
 
             connecting: false
 
-            constructor: (@$scope, @$timeout) ->
+            constructor: (@$timeout) ->
                 "ngInject"
+
+            $onInit: ->
+                poool "event", "onLoginClick", @onLoginClick
+
+            onLoginClick: (e) =>
+                @$timeout => @login()
+                e.originalEvent?.preventDefault?()
 
             isLogged: ->
                 window.test_user?.logged is true
@@ -50,4 +57,5 @@ angular
                 , 2000
 
             $onDestroy: ->
+                poool "unevent", "onLoginClick", @onLoginClick
                 @$timeout.cancel @_loginTimeout
