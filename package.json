@@ -1,9 +1,9 @@
 {
-  "name": "angular1-example",
+  "name": "angularjs-example",
   "version": "1.0.0",
   "description": "Simple Angular 1 example of how to use Poool SDK",
   "main": "index.js",
-  "repository": "https://github.com/p3ol/angular1-example.git",
+  "repository": "https://github.com/p3ol/angularjs-example.git",
   "author": "Ugo Stephant <ugo@poool.fr>",
   "license": "MIT",
   "private": true,

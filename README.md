@@ -1,4 +1,4 @@
-# angular1-example
+# angularjs-example
 
 > Simple Angular 1 example of how to use Poool SDK
 
