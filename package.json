@@ -2,34 +2,36 @@
   "name": "angularjs-example",
   "version": "1.0.0",
   "description": "Simple Angular 1 example of how to use Poool SDK",
-  "main": "index.js",
+  "main": "app/index.js",
   "repository": "https://github.com/p3ol/angularjs-example.git",
   "author": "Ugo Stephant <ugo@poool.fr>",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-angularjs-annotate": "^0.9.0",
-    "babel-preset-env": "^1.6.1",
-    "coffee-loader": "^0.9.0",
-    "coffeescript": "^2.1.0",
-    "css-loader": "^0.28.10",
-    "exports-loader": "^0.7.0",
-    "html-webpack-plugin": "^3.0.6",
-    "style-loader": "^0.20.2",
-    "uglifyjs-webpack-plugin": "^1.1.4",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.10",
-    "webpack-dev-server": "^3.1.0"
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-angularjs-annotate": "^0.10.0",
+    "eslint": "6.8.0",
+    "eslint-config-fbjs": "3.1.1",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-plugin-flowtype": "4.7.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-relay": "1.7.1",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "angular": "^1.7.2",
-    "angular-route": "^1.7.2",
-    "bootstrap": "^4.0.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.12.9"
+    "@babel/runtime-corejs3": "^7.9.6",
+    "angular": "^1.7.9",
+    "angular-route": "^1.7.9",
+    "core-js": "^3.6.5"
   },
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --config ./webpack.config.coffee --hot --inline --open"
+    "start": "node_modules/.bin/webpack-dev-server --config ./webpack.config.js --hot --inline --open"
   }
 }
